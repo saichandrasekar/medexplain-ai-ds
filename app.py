@@ -50,7 +50,7 @@ def root():
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model_loaded": pipeline is not None}
+    return {"status": "ok","version": "1.0.0", "model_loaded": pipeline is not None}
 
 
 @app.post("/predict")
