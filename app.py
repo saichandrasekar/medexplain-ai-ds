@@ -27,6 +27,7 @@ class PatientInput(BaseModel):
     age:      float
     sex:      int
     chestpain: int
+    restbp:   float = 0.0  # was empty in dataset, default to 0
     chol:     float
     fbs:      int
     restecg:  int
@@ -57,9 +58,10 @@ def predict(patient: PatientInput):
     try:
         X = np.array([[
             patient.age, patient.sex, patient.chestpain,
-            patient.chol, patient.fbs, patient.restecg,
-            patient.maxhr, patient.exang, patient.oldpeak,
-            patient.slope, patient.ca, patient.thal
+            patient.restbp, patient.chol, patient.fbs,
+            patient.restecg, patient.maxhr, patient.exang,
+            patient.oldpeak, patient.slope, patient.ca,
+            patient.thal
         ]])
 
         encoded     = pipeline.predict(X)[0]
