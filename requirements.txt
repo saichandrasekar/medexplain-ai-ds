@@ -1,5 +1,11 @@
-fastapi==0.115.0
-uvicorn==0.30.0
-scikit-learn==1.5.2
-numpy==1.26.4
-pydantic==2.7.0
+fastapi
+uvicorn
+xgboost
+mlflow
+scikit-learn==1.6.1
+numpy
+pydantic
+python-dotenv
+python-multipart
+httpx
+category_encoders
