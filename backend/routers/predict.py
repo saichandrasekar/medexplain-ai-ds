@@ -35,7 +35,7 @@ def _scale_risk_score(raw_score: float) -> float:
     return round(max(0.0, min(1.0, raw_score)) * 10, 2)
 
 def _risk_label(score_0_10: float) -> str:
-    if score_0_10< 4:
+    if score_0_10 < 4:
         return "low"
 
     if score_0_10 < 7:
