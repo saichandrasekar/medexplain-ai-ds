@@ -9,3 +9,9 @@ python-dotenv
 python-multipart
 httpx
 category_encoders
+chromadb
+sentence-transformers
+pdfplumber
+rank-bm25
+langchain
+langchain-community

@@ -23,3 +23,8 @@ def root():
         "version": app.version,
         "env": ENV,
     }
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+    
