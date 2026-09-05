@@ -15,3 +15,4 @@ pdfplumber
 rank-bm25
 langchain
 langchain-community
+openai

@@ -217,3 +217,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# RAG artifacts
+rag_docs/chroma_db/*
+rag_docs/sample_medical_docs/*
+rag_docs/uploads/*
+
+# ML model artifacts
+models/model_pipeline.joblib
+models/model.ubj
+models/model_bundle.pkl
